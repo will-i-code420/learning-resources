@@ -1,12 +1,15 @@
 <template>
+  <the-header title="Learning Resources"></the-header>
   <saved-resources></saved-resources>
 </template>
 
 <script>
+import TheHeader from './components/layouts/TheHeader.vue';
 import SavedResources from './components/learning-resources/SavedResources.vue';
 
 export default {
   components: {
+    TheHeader,
     SavedResources,
   },
   data() {
