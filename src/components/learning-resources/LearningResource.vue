@@ -3,7 +3,9 @@
     <base-card>
       <header>
         <h2>{{ resource.title }}</h2>
-        <button @click="deleteResource(resource.id)">Delete</button>
+        <base-button mode="flat" @click="deleteResource(resource.id)"
+          >Delete</base-button
+        >
       </header>
       <p>{{ resource.description }}</p>
       <nav>
