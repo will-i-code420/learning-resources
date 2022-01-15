@@ -16,24 +16,7 @@ export default {
   components: {
     LearningResource,
   },
-  data() {
-    return {
-      resources: [
-        {
-          id: 'official-guide',
-          title: 'Official Guide',
-          description: 'Official Vue.js Documentation',
-          link: 'https://v3.vuejs.org',
-        },
-        {
-          id: 'vue-eslint-guide',
-          title: 'Vue.js ESlint Guide',
-          description: 'Official docs to use vue version of eslint',
-          link: 'https://eslint.vuejs.org',
-        },
-      ],
-    };
-  },
+  inject: ['resources'],
   methods: {
     deleteResource(id) {
       this.resources = this.resources.filter((res) => res.id !== id);
