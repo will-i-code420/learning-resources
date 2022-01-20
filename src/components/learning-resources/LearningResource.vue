@@ -23,11 +23,7 @@ export default {
       required: true,
     },
   },
-  methods: {
-    deleteResource(id) {
-      this.$emit('delete-resource', id);
-    },
-  },
+  inject: ['deleteResource'],
 };
 </script>
 
